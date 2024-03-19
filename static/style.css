@@ -1,0 +1,426 @@
+body,
+html {
+    width: 100%;
+    height:100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+/* chatbot dii */
+h1 {
+  color: black;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: center;
+  font-size: 40px;
+}
+
+h3 {
+  color: black;
+  font-size: 20px;
+  margin-top: 3px;
+  text-align: center;
+}
+
+#chatbox {
+  width: 50%;
+  /* margin-top: 60px; */
+  height:65vh;
+  border:1px ;
+  border:1px solid white;
+  overflow-y: auto;
+  padding:20px;
+
+}
+
+#userInput {
+
+  width:53%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+#textInput {
+  width: 100%;
+  border: none;
+  font-family: poppins;
+  font-size: 17px;
+  padding:5px 10px;
+
+}
+
+#buttonInput {
+  padding: 6px 3px;
+  font-family: poppins;
+  font-size: 17px;
+  background-color: white;
+  border:1px solid  black;
+  cursor: pointer;
+}
+
+.userText {
+  color: white;
+  font-family: monospace;
+  font-size: 17px;
+  text-align: right;
+  line-height: 30px;
+}
+
+.userText span {
+    background: linear-gradient(135deg,  rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 2px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    padding:4px 2px;
+}
+
+.botText {
+  color: white;
+  font-family: monospace;
+  font-size: 17px;
+  text-align: left;
+  line-height: 30px;
+}
+
+.botText span {
+    background: linear-gradient(135deg,  rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 2px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    padding:1px 2px;
+}
+
+#tidbit {
+  position:absolute;
+  bottom:0;
+  right:0;
+  width: 300px;
+}
+.chat-bot-container{
+  position: absolute;
+  display: flex;
+  flex-direction: column ;
+  justify-content: center;
+  align-items: center;
+  top:80px;
+  width:100%;
+}
+nav{
+    position: absolute;
+    top:0;
+    width:100%;
+    
+}
+nav div{
+    display: flex;
+    padding:10px 20px;
+    list-style: none;
+    text-decoration: none;
+    justify-content: space-between;
+}
+.title{
+    font-size: 34px;
+    font-family: poppins;
+    font-weight: 500;
+    color:white
+}
+nav div .subTitles{
+    font-size: 22px;
+    font-family: poppins;
+    font-weight: 200;
+    color:white;
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+
+
+
+
+/* chatbot */
+
+
+.pf-c-form-control:hover {
+    border-bottom: 1px solid #330080 !important;
+}
+
+.pf-c-form-control:focus {
+    border: none;
+}
+
+a {
+    color: #330080;
+}
+
+.area {
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to bottom, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to bottom, #24243e, #302b63, #0f0c29);
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+}
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: 100vh; 
+}
+
+
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+.circles li:nth-child(2) {
+left: 10%;
+width: 20px;
+height: 20px;
+animation-delay: 2s;
+animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+left: 70%;
+width: 20px;
+height: 20px;
+animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+left: 40%;
+width: 60px;
+height: 60px;
+animation-delay: 0s;
+animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+left: 65%;
+width: 20px;
+height: 20px;
+animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+left: 75%;
+width: 110px;
+height: 110px;
+animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+left: 35%;
+width: 150px;
+height: 150px;
+animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+left: 50%;
+width: 25px;
+height: 25px;
+animation-delay: 15s;
+animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+left: 20%;
+width: 15px;
+height: 15px;
+animation-delay: 2s;
+animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+left: 85%;
+width: 50px;
+height: 50px;
+animation-delay: 0s;
+animation-duration: 11s;
+}
+
+.circles li:nth-child(11) {
+left: 85%;
+width: 30px;
+height: 30px;
+animation-delay: 0s;
+}
+
+.circles li:nth-child(12) {
+left: 60%;
+width: 20px;
+height: 20px;
+animation-delay: 2s;
+animation-duration: 12s;
+}
+
+.circles li:nth-child(13) {
+left: 10%;
+width: 20px;
+height: 20px;
+animation-delay: 4s;
+}
+
+.circles li:nth-child(14) {
+left: 60%;
+width: 60px;
+height: 60px;
+animation-delay: 0s;
+animation-duration: 18s;
+}
+
+.circles li:nth-child(15) {
+left: 25%;
+width: 20px;
+height: 20px;
+animation-delay: 0s;
+}
+
+.circles li:nth-child(16) {
+left: 15%;
+width: 110px;
+height: 110px;
+animation-delay: 3s;
+}
+
+.circles li:nth-child(17) {
+left: 85%;
+width: 100px;
+height: 100px;
+animation-delay: 7s;
+}
+
+.circles li:nth-child(18) {
+left: 10%;
+width: 25px;
+height: 25px;
+animation-delay: 15s;
+animation-duration: 45s;
+}
+
+.circles li:nth-child(19) {
+left: 90%;
+width: 15px;
+height: 15px;
+animation-delay: 2s;
+animation-duration: 35s;
+}
+
+.circles li:nth-child(20) {
+left: 35%;
+width: 70px;
+height: 70px;
+animation-delay: 0s;
+animation-duration: 11s;
+}
+
+.circles li:nth-child(21) {
+left: 55%;
+width: 60px;
+height: 60px;
+animation-delay: 0s;
+}
+
+.circles li:nth-child(22) {
+left: 70%;
+width: 20px;
+height: 20px;
+animation-delay: 2s;
+animation-duration: 12s;
+}
+
+.circles li:nth-child(23) {
+left: 5%;
+width: 20px;
+height: 20px;
+animation-delay: 4s;
+}
+
+.circles li:nth-child(24) {
+left: 90%;
+width: 60px;
+height: 60px;
+animation-delay: 0s;
+animation-duration: 18s;
+}
+
+.circles li:nth-child(25) {
+left: 5%;
+width: 20px;
+height: 20px;
+animation-delay: 0s;
+}
+
+.circles li:nth-child(26) {
+left: 45%;
+width: 110px;
+height: 110px;
+animation-delay: 3s;
+}
+
+.circles li:nth-child(27) {
+left: 75%;
+width: 150px;
+height: 150px;
+animation-delay: 7s;
+}
+
+.circles li:nth-child(28) {
+left: 10%;
+width: 25px;
+height: 25px;
+animation-delay: 15s;
+animation-duration: 45s;
+}
+
+.circles li:nth-child(29) {
+left: 80%;
+width: 15px;
+height: 15px;
+animation-delay: 2s;
+animation-duration: 35s;
+}
+
+.circles li:nth-child(30) {
+left: 5%;
+width: 150px;
+height: 150px;
+animation-delay: 0s;
+animation-duration: 11s;
+}
+
+
+@keyframes animate {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  100% {
+    transform: translateY(-100vh) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
